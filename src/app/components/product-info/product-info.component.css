@@ -1,0 +1,121 @@
+.example-card {
+    background-color: transparent;
+    margin-top: 20px;
+    width: 90%; /* set the width of the card */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* add some shadow to the card */
+    border-radius: 20px; /* add some rounded corners to the card */
+    color: black;
+    border: 1px solid lightgrey;
+    padding: 30px;
+    height: auto;
+  }
+
+  .icons-container {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+  }
+
+  .search-icon{
+      color: black;
+  }
+
+  .input-field{
+      background-color:white;
+  }
+
+
+  .card-container::-webkit-scrollbar {
+    width: 0.8em; /* set the width of the scrollbar */
+    background-color: #c0c4ca; /* set the background color of the scrollbar */
+  }
+   
+  .card-container::-webkit-scrollbar-thumb {
+    background-color: #585c60; /* set the color of the thumb */
+  }
+
+  .card-container {
+    overflow: auto;
+    max-height: 500px;
+  }
+
+  .example-full-width{
+      width: 90%;
+  }
+  
+  .container-for-input {
+    display: flex; /* use flexbox to align the rows vertically */
+    flex-direction: column; /* stack the rows vertically */
+  }
+  
+  .row {
+    display: flex; /* use flexbox to align the inputs horizontally */
+    justify-content: space-between; /* distribute the inputs evenly across the row */
+  }
+
+  .checkbox-container {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+  }
+
+  .mat-checkbox {
+    color: black;
+    transform: scale(0.9);
+    border-radius: 6px;
+  }
+
+  .container {
+    display: flex; /* use flexbox to align the elements horizontally */
+    align-items: center;
+  }
+    
+  p{
+      font-size:14px;
+      font-weight: 500;
+      margin-left: 20px;
+  }
+
+  .parent-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  img {
+    border-radius: 5px;
+    height: 80px;
+    border: 1px solid lightgrey;
+    width: 80px;
+    margin: 0 20px;
+}
+
+
+  .products{
+      margin: 30px;
+  }
+
+  .delete-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  .checkbox:checked + .card {
+    box-shadow: 0 0 10px rgb(165, 27, 27);
+  }
+  
+  .product-search{
+    display: flex;
+  }
+
+  mat-icon {
+    color: #ccc; /* set the color of the search icon */
+    font-size: 22px; 
+    cursor: pointer; /* change the cursor to pointer when hovering over the search icon */
+    padding: 4px;
+  }

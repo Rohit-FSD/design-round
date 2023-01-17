@@ -1,0 +1,34 @@
+.example-full-width{
+    width: 100%;
+}
+
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+    display: flex;
+    background-color: transparent;
+    color: black;
+}
+
+.example-card-image {
+  width: 70px; /* or any other width */
+  height: 70px;
+}
+
+.example-card-details {
+  width: 70%; /* or any other width */
+  margin-left: 10px; /* or any other margin */
+  font-weight: 600;;
+}
+
+.example-button {
+    border:1px solid grey; 
+    width: 25%;
+    height: 50px; 
+    border-radius: 15px;
+}
+
+.button-container{
+    position:fixed;
+    bottom:30px;
+}

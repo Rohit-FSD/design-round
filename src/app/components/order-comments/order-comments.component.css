@@ -1,0 +1,49 @@
+.chat-card{
+    border-radius:50px;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    max-height: 150px;
+    overflow: auto;
+}
+
+.sky-blue-div {
+    margin-top: 10px;
+    background-color: rgb(50, 114, 186);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.chat-input{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 93%;
+}
+
+.gray-div{
+    margin-top:10px;
+    background-color: rgb(68, 78, 90);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.example-full-width{
+    width: 90%;
+}
+
+.chat-card::-webkit-scrollbar {
+    width: 0.8em; /* set the width of the scrollbar */
+    background-color: #c0c4ca; /* set the background color of the scrollbar */
+  }
+   
+  .chat-card::-webkit-scrollbar-thumb {
+    background-color: #585c60; /* set the color of the thumb */
+  }
+  
+  .mat-icon{
+      color: black;
+  }

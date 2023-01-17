@@ -1,0 +1,21 @@
+<div style="margin:30px">
+    <div class="customer-search">
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input style="font-size: 15px;" placeholder="Search for customer" matInput [(ngModel)]="searchText"
+                (keyup)="search()">
+        </mat-form-field>
+        <mat-card *ngFor="let customer of filteredCustomers" class="example-card">
+            <img src="{{customer.img}}" class="example-card-image">
+            <div class="example-card-details">
+                <ul style="list-style-type: none; padding-left:0; margin-top:0;">
+                    <li style="font-weight:600">{{customer.name}}</li>
+                    <li style="font-weight:600">{{customer.place}}</li>
+                    <li style="font-weight:600">{{customer.contact}}</li>
+                </ul>
+            </div>
+        </mat-card>
+        <button class="example-button button-container" mat-stroked-button color="primary">Add new customer</button>
+    </div>
+    <div>
+    </div>
+</div>

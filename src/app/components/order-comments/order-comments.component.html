@@ -1,0 +1,13 @@
+<div style="margin: 30px;">
+    <h2>Order Comments</h2>
+    <mat-card class="chat-card">
+        <div *ngFor="let message of messages" class="">
+            <div class="sky-blue-div">{{message.sendermsg}}</div>
+            <div class="gray-div">{{message.recievermsg}}</div>
+        </div>
+        <mat-form-field appearance="outline" class="chat-input">
+            <mat-icon matSuffix>send</mat-icon>
+            <input matInput placeholder="Enter your message">
+        </mat-form-field>
+    </mat-card>
+</div>

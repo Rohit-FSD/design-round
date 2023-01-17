@@ -1,0 +1,76 @@
+<div class="products">
+    <div class="product-search">
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-icon matPrefix class="search-icon" matPrefix>search</mat-icon>
+            <input style="font-size: 15px;" placeholder="Search for product" matInput [(ngModel)]="searchText"
+                (keyup)="search()">
+        </mat-form-field>
+        <button style="margin-left:20px; border-radius: 20%; margin-top: 2px;" mat-fab color="primary"
+            aria-label="Example icon button with a delete icon">
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    <div class="card-container">
+        <div *ngFor="let product of filteredProducts">
+            <mat-card class="example-card" [ngClass]="cardClass">
+                <div class="icons-container">
+                    <mat-icon>comment</mat-icon>
+                    <mat-icon>delete</mat-icon>
+                    <mat-icon>edit</mat-icon>
+                </div>
+                <div class="checkbox-container">
+                    <mat-checkbox class="checkbox" #checkbox (change)="onCheckboxChange(checkbox.checked)">
+                    </mat-checkbox>
+                </div>
+                <mat-grid-list cols="6" rowHeight="105px">
+                    <mat-grid-tile colspan="3" rowspan="2">
+                        <div class="parent-conatiner">
+                            <h5 [ngStyle]="product.status=='Pricing Done' ? {color:'green' , 'border':'1px solid green'}:{color:'maroon' , 'border':'1px solid maroon'}"
+                                style="margin-left:20px; width:150px; padding:4px; border-radius:10px; text-align: center;">
+                                {{product.status}}
+                            </h5>
+                            <div class="container">
+                                <img mat-card-image [src]="product.image" alt="{{product.name}}">
+                                <ul style="list-style-type: none; padding-left:0; margin-top:0;">
+                                    <li style="font-weight:600">{{product.description}}</li>
+                                    <li style="font-weight:600">{{product.model}}</li>
+                                    <li style="font-weight:600">{{product.price}}</li>
+                                </ul>
+                            </div>
+                            <p>Product ID: {{product.id}}</p>
+                        </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="3" rowspan="2">
+                        <div class="container-for-input ">
+                            <div class="row">
+                                <mat-form-field class="input-field" [ngStyle]="{'margin-right':'-35px'}"
+                                    appearance="outline">
+                                    <mat-label>Quantity</mat-label>
+                                    <input matInput [(ngModel)]="product.quan" placeholder="Placeholder">
+                                </mat-form-field>
+                                <mat-form-field class="input-field" [ngStyle]="{'margin-right':'-35px'}"
+                                    appearance="outline">
+                                    <mat-label>Selling Price</mat-label>
+                                    <input matInput [(ngModel)]="product.sellingprice" placeholder="Placeholder">
+                                </mat-form-field>
+                            </div>
+                            <div class="row">
+                                <mat-form-field class="input-field" [ngStyle]="{'margin-right':'-35px'}"
+                                    appearance="outline">
+                                    <mat-label>Available</mat-label>
+                                    <input matInput [(ngModel)]="product.available" placeholder="Placeholder">
+                                </mat-form-field>
+                                <mat-form-field class="input-field" [ngStyle]="{'margin-right':'-35px'}"
+                                    appearance="outline">
+                                    <mat-label>Target Price</mat-label>
+                                    <input [(ngModel)]="product.targetprice" matInput placeholder="Placeholder">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </mat-card>
+            <br>
+        </div>
+    </div>
+</div>

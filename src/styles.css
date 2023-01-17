@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-checkbox-frame { 
+  border-color: grey 
+}
+
+.product-search .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: grey;
+  width: 100%;
+  border-radius: 60%;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: grey;
+  width: 60%;
+  border-radius: 60%;
+}
+
+.customer-search .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: grey;
+  width: 100%;
+  border-radius: 60%;
+}
+
+.chat-input.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: grey;
+  width: 100%;
+  border-radius: 60%;
+}
+
+.customer-search .mat-form-field-appearance-outline .mat-form-field-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+
+::-webkit-input-placeholder {
+  color: lightgray !important;
+}
+
+:-moz-placeholder {
+  color: lightgray !important;
+}
+
+::-moz-placeholder {
+  color: lightgray !important;
+}
+
+:-ms-input-placeholder {
+  color: lightgray !important;
+}
