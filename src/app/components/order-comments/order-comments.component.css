@@ -36,12 +36,12 @@
 }
 
 .chat-card::-webkit-scrollbar {
-    width: 0.8em; /* set the width of the scrollbar */
-    background-color: #c0c4ca; /* set the background color of the scrollbar */
+    width: 0.8em;
+    background-color: #c0c4ca;
   }
    
   .chat-card::-webkit-scrollbar-thumb {
-    background-color: #585c60; /* set the color of the thumb */
+    background-color: #585c60;
   }
   
   .mat-icon{

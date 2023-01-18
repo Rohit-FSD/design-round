@@ -11,13 +11,13 @@
 }
 
 .example-card-image {
-  width: 70px; /* or any other width */
+  width: 70px;
   height: 70px;
 }
 
 .example-card-details {
-  width: 70%; /* or any other width */
-  margin-left: 10px; /* or any other margin */
+  width: 70%;
+  margin-left: 10px;
   font-weight: 600;;
 }
 

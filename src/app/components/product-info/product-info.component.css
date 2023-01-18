@@ -1,9 +1,9 @@
 .example-card {
     background-color: transparent;
     margin-top: 20px;
-    width: 90%; /* set the width of the card */
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* add some shadow to the card */
-    border-radius: 20px; /* add some rounded corners to the card */
+    width: 90%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
     color: black;
     border: 1px solid lightgrey;
     padding: 30px;
@@ -26,12 +26,12 @@
 
 
   .card-container::-webkit-scrollbar {
-    width: 0.8em; /* set the width of the scrollbar */
-    background-color: #c0c4ca; /* set the background color of the scrollbar */
+    width: 0.8em;
+    background-color: #c0c4ca;
   }
    
   .card-container::-webkit-scrollbar-thumb {
-    background-color: #585c60; /* set the color of the thumb */
+    background-color: #585c60;
   }
 
   .card-container {
@@ -44,13 +44,13 @@
   }
   
   .container-for-input {
-    display: flex; /* use flexbox to align the rows vertically */
-    flex-direction: column; /* stack the rows vertically */
+    display: flex;
+    flex-direction: column;
   }
   
   .row {
-    display: flex; /* use flexbox to align the inputs horizontally */
-    justify-content: space-between; /* distribute the inputs evenly across the row */
+    display: flex;
+    justify-content: space-between;
   }
 
   .checkbox-container {
@@ -66,7 +66,7 @@
   }
 
   .container {
-    display: flex; /* use flexbox to align the elements horizontally */
+    display: flex;
     align-items: center;
   }
     
@@ -114,8 +114,8 @@
   }
 
   mat-icon {
-    color: #ccc; /* set the color of the search icon */
+    color: #ccc;
     font-size: 22px; 
-    cursor: pointer; /* change the cursor to pointer when hovering over the search icon */
+    cursor: pointer;
     padding: 4px;
   }
