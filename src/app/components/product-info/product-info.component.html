@@ -51,19 +51,21 @@
                                 <mat-form-field class="input-field" [ngStyle]="{'margin-right':'-35px'}"
                                     appearance="outline">
                                     <mat-label>Selling Price</mat-label>
-                                    <input matInput [(ngModel)]="product.sellingprice" placeholder="Placeholder">
+                                    <input matInput [(ngModel)]="product.sellingprice" placeholder="Placeholder"
+                                        readonly>
                                 </mat-form-field>
                             </div>
                             <div class="row">
                                 <mat-form-field class="input-field" [ngStyle]="{'margin-right':'-35px'}"
                                     appearance="outline">
                                     <mat-label>Available</mat-label>
-                                    <input matInput [(ngModel)]="product.available" placeholder="Placeholder">
+                                    <input matInput [(ngModel)]="product.available" placeholder="Placeholder" readonly>
                                 </mat-form-field>
                                 <mat-form-field class="input-field" [ngStyle]="{'margin-right':'-35px'}"
                                     appearance="outline">
                                     <mat-label>Target Price</mat-label>
-                                    <input [(ngModel)]="product.targetprice" matInput placeholder="Placeholder">
+                                    <input [(ngModel)]="product.targetprice" matInput placeholder="Placeholder"
+                                        readonly>
                                 </mat-form-field>
                             </div>
                         </div>
